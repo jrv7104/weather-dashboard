@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+    background-color: aqua;
+}
+
+.history {
+    //have buttons appear underneath search bar, can be clicked on to bring back city's weather conditions
+}
+
+.weatherDetails {
+    //put top-right corner under h1 area, should have all details for selected city
+}
+
+.fiveDayForecast {
+    put under weatherDetails class, have five-day forecast for selected city
+}
