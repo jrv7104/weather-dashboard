@@ -17,7 +17,7 @@ searchBtn.addEventListener("click", search);
 function search (event) {
     event.preventDefault()
     var baseurl= "https://api.openweathermap.org/data/2.5/weather?q=" + searchCity.value + "&appid=1870842f8aed3c5e2b7fa34a198fffef&units=imperial&lat=data.coord.lat&lon=data.coord.lon"
-    var fiveDayUrl = "https://api.openweathermap.org/data/2.5/weather?q=" + searchCity.value + "&appid=1870842f8aed3c5e2b7fa34a198fffef&daily.weather.id"
+    var fiveDayUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + searchCity.value + "&appid=1870842f8aed3c5e2b7fa34a198fffef&daily.weather.id"
     // console.log(event.target.value)
 
     fetch(baseurl)
@@ -29,9 +29,9 @@ function search (event) {
             document.querySelector("#wind").textContent = data.wind.speed
             document.querySelector("#humidity").textContent = data.main.humidity
 
-            var uviURL 
-            var lon = data.coord.lon
-            var lat = data.coord.lat
+            // var uviURL 
+            // var lon = data.coord.lon
+            // var lat = data.coord.lat
             // fetch(uviURL)
             
         })
