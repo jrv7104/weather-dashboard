@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"/>
 
-  <title>Document</title>
+  <title>Weather App</title>
   <h1>Weather Dashboard</h1>
 </head>
 <body>
@@ -15,8 +15,9 @@
 <form>
   <label for="search">"Enter a City"</label> 
   <input id="search" type="text" placeholder="Enter city here" />
-  <button type="submit">Search!</button>
+  <button id="searchBtn" type="submit">Search!</button>
 </form>
+
 
 <div class="history"></div>
 
@@ -24,59 +25,58 @@
 <div class="weatherDetails"></div>
   <div class="card text-center">
   <div class="card-body">
-    <h5 class="card-title">City name with weather image</h5>
-    <p class="card-text">Temp: </p>
-    <p class="card-text">Wind: </p>
-    <p class="card-text">Humidity: </p>
-    <p class="card-text">UV Index with color index: </p>
+    <h5 class="card-title">City <span id="city"></span></h5>
+    <p class="card-text">Temp: <span id="temp"></span></p>
+    <p class="card-text">Wind: <span id="wind"></span></p>
+    <p class="card-text">Humidity: <span id="humidity"></span></p>
   </div>
 </div>
 
 
 <div class="fiveDayForecast">Five-Day Forecast</div>
-<div class="card" style="width: 18rem;">
+<div class="card-1" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Date</h5>
     <h6 class="card-subtitle mb-2 text-muted">Image</h6>
-    <p class="card-text">Temp: </p>
-    <p class="card-text">Wind: </p>
-    <p class="card-text">Humidity: </p>
+    <p class="card-text">Temp: <span id="temp5"></span></p>
+    <p class="card-text">Wind: <span id="wind5"></span></p>
+    <p class="card-text">Humidity: <span id="hum5"></span></p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card-2" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Date</h5>
     <h6 class="card-subtitle mb-2 text-muted">Image</h6>
-    <p class="card-text">Temp: </p>
-    <p class="card-text">Wind: </p>
-    <p class="card-text">Humidity: </p>
+    <p class="card-text">Temp: <span id="temp5"></span></p>
+    <p class="card-text">Wind: <span id="wind5"></span></p>
+    <p class="card-text">Humidity: <span id="hum5"></span></p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card-3" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Date</h5>
     <h6 class="card-subtitle mb-2 text-muted">Image</h6>
-    <p class="card-text">Temp: </p>
-    <p class="card-text">Wind: </p>
-    <p class="card-text">Humidity: </p>
+    <p class="card-text">Temp: <span id="temp5"></span></p>
+    <p class="card-text">Wind: <span id="wind5"></span></p>
+    <p class="card-text">Humidity: <span id="hum5"></span></p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card-4" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Date</h5>
     <h6 class="card-subtitle mb-2 text-muted">Image</h6>
-    <p class="card-text">Temp: </p>
-    <p class="card-text">Wind: </p>
-    <p class="card-text">Humidity: </p>
+    <p class="card-text">Temp: <span id="temp5"></span></p>
+    <p class="card-text">Wind: <span id="wind5"></span></p>
+    <p class="card-text">Humidity: <span id="hum5"></span></p>
   </div>
 </div>
-<div class="card" style="width: 18rem;">
+<div class="card-5" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Date</h5>
     <h6 class="card-subtitle mb-2 text-muted">Image</h6>
-    <p class="card-text">Temp: </p>
-    <p class="card-text">Wind: </p>
-    <p class="card-text">Humidity: </p>
+    <p class="card-text">Temp: <span id="temp5"></span></p>
+    <p class="card-text">Wind: <span id="wind5"></span></p>
+    <p class="card-text">Humidity: <span id="hum5"></span></p>
   </div>
 </div>
 
