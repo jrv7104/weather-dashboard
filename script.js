@@ -1,4 +1,6 @@
 //set variables for days, days of the week and months
+var currentDay = document.getElementById("currentDay")
+currentDay.innerText = moment().format("dddd, MMMM Do YYYY");
 
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 var nameDays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
@@ -40,9 +42,21 @@ function search (event) {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            // document.querySelectorAll("#temp5").textContent = data.main.temp + " F"
-            // document.querySelectorAll("#wind5").textContent = data.wind.speed
-            // document.querySelectorAll("#humidity").textContent = data.main.humidity
+            document.querySelector("#temp1").textContent = data.main.temp + " F"
+            document.querySelector("#wind1").textContent = data.wind.speed
+            document.querySelector("#hum1").textContent = data.main.humidity
+            document.querySelector("#temp2").textContent = data.main.temp + " F"
+            document.querySelector("#wind2").textContent = data.wind.speed
+            document.querySelector("#hum2").textContent = data.main.humidity
+            document.querySelector("#temp3").textContent = data.main.temp + " F"
+            document.querySelector("#wind3").textContent = data.wind.speed
+            document.querySelector("#hum3").textContent = data.main.humidity
+            document.querySelector("#temp4").textContent = data.main.temp + " F"
+            document.querySelector("#wind4").textContent = data.wind.speed
+            document.querySelector("#hum4").textContent = data.main.humidity
+            document.querySelector("#temp5").textContent = data.main.temp + " F"
+            document.querySelector("#wind5").textContent = data.wind.speed
+            document.querySelector("#hum5").textContent = data.main.humidity
         })
 
         }
