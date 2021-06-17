@@ -42,21 +42,21 @@ function search (event) {
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            document.querySelector("#temp1").textContent = data.main.temp + " F"
-            document.querySelector("#wind1").textContent = data.wind.speed
-            document.querySelector("#hum1").textContent = data.main.humidity
-            document.querySelector("#temp2").textContent = data.main.temp + " F"
-            document.querySelector("#wind2").textContent = data.wind.speed
-            document.querySelector("#hum2").textContent = data.main.humidity
-            document.querySelector("#temp3").textContent = data.main.temp + " F"
-            document.querySelector("#wind3").textContent = data.wind.speed
-            document.querySelector("#hum3").textContent = data.main.humidity
-            document.querySelector("#temp4").textContent = data.main.temp + " F"
-            document.querySelector("#wind4").textContent = data.wind.speed
-            document.querySelector("#hum4").textContent = data.main.humidity
-            document.querySelector("#temp5").textContent = data.main.temp + " F"
-            document.querySelector("#wind5").textContent = data.wind.speed
-            document.querySelector("#hum5").textContent = data.main.humidity
+            document.querySelector("#temp1").textContent = data.list[0].main.temp + " F"
+            document.querySelector("#wind1").textContent = data.list[0].wind.speed
+            document.querySelector("#hum1").textContent = data.list[0].main.humidity
+            document.querySelector("#temp2").textContent = data.list[8].main.temp + " F"
+            document.querySelector("#wind2").textContent = data.list[8].wind.speed
+            document.querySelector("#hum2").textContent = data.list[8].main.humidity
+            document.querySelector("#temp3").textContent = data.list[15].main.temp + " F"
+            document.querySelector("#wind3").textContent = data.list[15].wind.speed
+            document.querySelector("#hum3").textContent = data.list[15].main.humidity
+            document.querySelector("#temp4").textContent = data.list[15].main.temp + " F"
+            document.querySelector("#wind4").textContent = data.list[15].wind.speed
+            document.querySelector("#hum4").textContent = data.list[15].main.humidity
+            document.querySelector("#temp5").textContent = data.list[23].main.temp + " F"
+            document.querySelector("#wind5").textContent = data.list[23].wind.speed
+            document.querySelector("#hum5").textContent = data.list[23].main.humidity
         })
 
         }
